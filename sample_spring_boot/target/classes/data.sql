@@ -29,3 +29,19 @@ VALUES
    'https://www.kanebo-cosmetics.co.jp/campaign/img/index/203/01.jpg',
    'カネボウの化粧品です'
 );
+
+INSERT INTO PRODUCTS (
+  id,
+  name,
+  url,
+  imgsrc,
+  description
+)
+VALUES
+(
+   '3',
+   'name3',
+   'https://www.kanebo-cosmetics.co.jp/',
+   '/img/test_img1.png',
+   'テストの化粧品です'
+);

@@ -3,11 +3,15 @@
 <head>
 <title>Thymeleaf サンプル(商品詳細ページ)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- CSS読み込み -->
+<link th:replace="_css"></link>
+
 </head>
 <body>
 	<!-- ヘッダー -->
 	<header th:replace="__header"></header>
-
+	
 	<h1>商品詳細ページ</h1>
 	<!-- Thymeleafの実装例 -->
 	<div>
