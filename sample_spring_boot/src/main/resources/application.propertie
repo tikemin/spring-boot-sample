@@ -1,0 +1,24 @@
+# datasource
+spring.datasource.driver-class-name=org.h2.Driver
+#spring.datasource.url=jdbc:h2:./h2db/sampledb
+spring.datasource.url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.username=username
+spring.datasource.password=password
+
+# connection pool use tomcat
+spring.datasource.tomcat.maxActive=10
+spring.datasource.tomcat.maxIdle=10
+spring.datasource.tomcat.minIdle=10
+spring.datasource.tomcat.initialSize=10
+spring.datasource.tomcat.defaultAutoCommit=false
+
+# DB 初期化
+# ALWAYS ： アプリ起動時に毎回実行
+# EMBEDDED ： 埋込DB(H2 Database)の時のみ実行
+# NEVER ： 実行しない
+spring.datasource.initialization-mode=always
+
+# h2 for debug tool
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.h2.console.settings.web-allow-others=true

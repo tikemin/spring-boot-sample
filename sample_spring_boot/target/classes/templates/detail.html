@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf サンプル(商品詳細ページ)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>商品詳細ページ</h1>
+	<!-- Thymeleafの実装例 -->
+	<div>
+		<!-- 商品名 -->
+		<p th:text="'商品名：' + @{${product.name}?:'サンプル商品名'}">サンプルテキスト</p>
+
+		<!-- 商品の画像 -->
+		<img
+			th:src="${product.imgsrc}?: 'https://www.homepage-tukurikata.com/image/lion.jpg'"
+			width="500" height="500" alt="商品画像" />
+
+		<!-- 商品説明 -->
+		<p th:text="'商品説明：' + @{${product.description}?:'サンプル説明'}">サンプルテキスト</p>
+	</div>
+</body>
+</html>
