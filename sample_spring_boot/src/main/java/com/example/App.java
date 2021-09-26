@@ -14,6 +14,8 @@ public class App {
   
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
+        // ここに機能を入れる
+        // 更に修正を加えた
     }
     
 }
