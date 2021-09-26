@@ -20,5 +20,3 @@
 1. 「sample_spring_boot」内の「/sample_spring_boot/src/main/resources/templa    tes」内の「data.sql」を変更するとDBに格納するデータを変更することができる。
 
 2. 「sample_spring_boot」内の「/sample_spring_boot/src/main/resources/templa    tes」内の「schema.sql」を変更するとDBのスキーマを変更することができる。
-
-### 新しい機能を追加しました。
